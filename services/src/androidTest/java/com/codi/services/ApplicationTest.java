@@ -1,4 +1,4 @@
-package com.codi.guide;
+package com.codi.services;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

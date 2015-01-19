@@ -1,9 +1,11 @@
-package com.codi.guide;
+package com.codi.services;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -35,5 +37,22 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void startService(View view) {
+        Intent intent = new Intent(this, HelloService.class);
+        startService(intent);
+    }
+
+    public void startIntentService(View view) {
+        Intent intent = new Intent(this, HelloIntentService.class);
+        startService(intent);
+    }
+
+    // TODO need to fix
+    public void startForeground(View view) {
+
+        Intent intent = new Intent(this, ForegroundService.class);
+        startService(intent);
     }
 }

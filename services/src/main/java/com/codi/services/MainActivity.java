@@ -49,7 +49,6 @@ public class MainActivity extends ActionBarActivity {
         startService(intent);
     }
 
-    // TODO need to fix
     public void startForeground(View view) {
 
         Intent intent = new Intent(this, ForegroundService.class);

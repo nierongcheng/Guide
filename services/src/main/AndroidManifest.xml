@@ -10,6 +10,12 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
+
+        </activity>
+        <activity android:name=".BindActivity">
+
+        </activity>
+        <activity android:name=".MessengerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,6 +26,8 @@
         <service android:name=".HelloService" />
         <service android:name=".HelloIntentService" />
         <service android:name=".ForegroundService" />
+        <service android:name=".LocalService" />
+        <service android:name=".MessengerService" />
     </application>
 
 </manifest>

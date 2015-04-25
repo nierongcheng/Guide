@@ -1,1 +1,1 @@
-include ':loader',':services',':cp'
+include ':loader',':services',':cp', ':cpclient'

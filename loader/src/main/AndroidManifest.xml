@@ -19,27 +19,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FileSelectActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.PICK" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.OPENABLE" />
-                <data android:mimeType="text/plain" />
-                <data android:mimeType="images/*" />
-            </intent-filter>
-        </activity>
-
-        <provider
-            android:authorities="com.codi.cp.fileprovider"
-            android:name="android.support.v4.content.FileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
-                       android:resource="@xml/file_paths" />
-
-        </provider>
-
     </application>
 
 </manifest>

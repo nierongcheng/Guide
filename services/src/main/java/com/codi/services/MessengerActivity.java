@@ -35,6 +35,7 @@ public class MessengerActivity extends Activity {
         mMessageTV = (TextView) findViewById(R.id.message);
 
         mReceiveService = new Messenger(new InComingHandler());
+
     }
 
     public void bindRemoteService(View view) {
